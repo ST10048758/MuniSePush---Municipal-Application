@@ -1,13 +1,21 @@
  MuniSePush
 
 
-This Windows Forms application allows users to report issues to their municipalities by providing their location, selecting a category, describing the issue, and attaching relevant media files. Users must confirm their submission before it's saved, and once a report is successfully submitted, a short survey is presented to gather feedback. Users may also view a list of upcoming and past events. Filter options are available to help refine their searches, and recommendations for events will be generated for each user, according to their recent search/filter options. Finally, user can track the status of their service requests, which are created in part 1, and view details regarding their reports such as the location, category, description as well as the request status (Pending, Completed or Canceled)
+This Windows Forms application allows users to report issues to their municipalities by providing their location, selecting a category, 
+describing the issue, and attaching relevant media files. Users must confirm their submission before it's saved, and once a report is 
+successfully submitted, a short survey is presented to gather feedback. Users may also view a list of upcoming and past events. Filter 
+options are available to help refine their searches, and recommendations for events will be generated for each user, according to their 
+recent search/filter options. Finally, user can track the status of their service requests, which are created in part 1, and view details 
+regarding their reports such as the location, category, description as well as the request status (Pending, Completed or Canceled)
+
 
 Features:
 - Issue Reporting: Users can input their location, select a category, provide a description, and attach media files to report an issue.
-- Viewing events and announcements: Users can view events in their area. To help refine searches, users can filter results by category or date period. 
+- Viewing events and announcements: Users can view events in their area. To help refine searches, users can filter results by category or 
+date period. 
 	Recommendations will be generated based on filters used while searching.
-Tracking Service request Status: Users can view a complete list of all service requests and filter out options. Related service requests will also be displayed to the user, which are generated according to the users search location.
+Tracking Service request Status: Users can view a complete list of all service requests and filter out options. Related service requests will
+also be displayed to the user, which are generated according to the users search location.
 
 Requirements
 - Development Environment: Visual Studio 2019 or higher
@@ -28,7 +36,8 @@ How to Compile and Run
 
 	Step 4: Configure the Database
 	- Place the ServiceRequests.db file in the project's root directory.
-	- Update the database connection string in ServiceRequestForm.cs if necessary: string connectionString = "Data Source=./ServiceRequests.db;Version=3;";
+	- Update the database connection string in ServiceRequestForm.cs if necessary: string connectionString = "Data 
+Source=./ServiceRequests.db;Version=3;";
 
 	Step 5: Run the Application
 	- Click Start in Visual Studio or press F5.
@@ -67,14 +76,16 @@ Local Events Form
 
 3. Viewing Event Data:
 	The event data is displayed in a DataGridView.
-	When a user clicks on an event in the DataGridView, detailed information about the event is shown, including the name, date, category, description, entry fee, venue, and an image.
+	When a user clicks on an event in the DataGridView, detailed information about the event is shown, including the name, date, 
+category, description, entry fee, venue, and an image.
 
 4. Generating Recommendations:
 	After applying filters multiple times, the form generates event recommendations based on user preferences.
 	The btnRecommendations button becomes visible, allowing users to view the recommended events.
 
 Recommendations Form
-The RecommendationsForm displays a list of recommended events based on the user's search preferences. It provides the following functionalities:
+The RecommendationsForm displays a list of recommended events based on the user's search preferences. It provides the following 
+functionalities:
 1. Displaying Recommended Events:
 	The form shows up to three recommended events as clickable links.
 	Each link includes the event name and description.
@@ -180,8 +191,3 @@ Troubleshooting
 
 	File Preview Issues:
 		Ensure attached files are in supported formats (.jpg, .png, .txt).
-
-
-
-
-
