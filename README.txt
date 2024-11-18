@@ -15,7 +15,7 @@ Requirements
 
 How to Compile and Run
 	Step 1: Clone the Repository
-	- Clone the repository to your local machine: git clone https://github.com/your-repository-link.git
+	- Clone the repository to your local machine: git clone https://github.com/ST10048758/MuniSePush---Municipal-Application.git
 
 	Step 2: Open in Visual Studio
 	- Open Visual Studio.
